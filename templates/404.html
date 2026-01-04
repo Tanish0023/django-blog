@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Page Not Found{% endblock title %}
+
+{% block content %}
+<section id="error-404">
+  <header>
+    <h2>404 - Page Not Found</h2>
+  </header>
+  <p>   
+    Oops! The page you're looking for doesn't exist. It might have been moved or deleted.
+  </p>
+  <p>
+    Please check the URL for typos or return to the <a href="{% url 'starting-page' %}">home page</a>.
+  </p>
+</section>
+{% endblock content %}
